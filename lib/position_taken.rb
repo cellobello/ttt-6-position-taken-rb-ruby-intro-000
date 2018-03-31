@@ -3,5 +3,8 @@ require 'pry'
 
 def position_taken?(board, index)
   binding.pry
-  board[index] != " " && board[index] != "" && board[index] != nil
+  if board[index] != " " && board[index] != "" && board[index] != nil
+    FALSE
+  else
+    true
 end
